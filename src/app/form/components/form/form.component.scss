@@ -1,0 +1,19 @@
+.form-wrapper {
+    padding: 50px;
+}
+
+form {
+    margin-bottom: 50px;
+}
+
+.sections {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    app-section:not(:last-child) {
+        margin-right: 16px;
+    }
+}

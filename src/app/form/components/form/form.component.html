@@ -1,0 +1,14 @@
+<div class="form-wrapper">
+  <form [formGroup]="form">
+    <app-input
+      formControlName="password"
+      [label]="'Enter password:'"
+    ></app-input>
+  </form>
+  <div class="sections">
+    <app-section
+      *ngFor="let section of sections"
+      [section]="section"
+    ></app-section>
+  </div>
+</div>
