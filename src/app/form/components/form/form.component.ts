@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Subscription, distinctUntilChanged, switchMap, tap } from 'rxjs';
 import { ValidateStrengthService } from 'src/app/core/services/validate-strength.service';
@@ -8,6 +8,7 @@ import { Section } from 'src/app/shared/models/section.model';
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FormComponent {
   public form!: FormGroup;
